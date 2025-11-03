@@ -47,6 +47,25 @@
 | `bool`              | 1                     | Type booléen (`true` ou `false`), défini avec `<stdbool.h>`.                    |
 
 
+
+- **Classes de stockage :**
+
+| **Spécificateur** | **Description**                                                                        |
+| ----------------- | -------------------------------------------------------------------------------------- |
+| `auto`            | Définition automatique (implicite pour les variables locales).                         |
+| `static`          | La variable locale conserve sa valeur entre plusieurs appels.                          |
+| `extern`          | La variable est déclarée dans un autre fichier (utilisée pour le lien entre fichiers). |
+
+
+- **Qualificateurs :**
+
+| **Qualificateur** | **Description**                                                                      |
+| ----------------- | ------------------------------------------------------------------------------------ |
+| `const`           | Spécifie une variable non modifiable (lecture seule).                                |
+| `volatile`        | Empêche certaines optimisations du compilateur (utile pour les registres matériels). |
+
+
+
 - **Déterminer l'Intervalle des Types de Données :**
     - **Pour les types signés :**
        - L'intervalle est de $`-2^{n-1}`$ à $`2^{n-1} - 1`$, où $`n`$ est le nombre de bits utilisés pour le type.
