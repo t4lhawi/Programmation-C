@@ -57,7 +57,6 @@ Les **modificateurs** changent la taille ou le signe des types entiers et réels
 | ------------------------ | ------------------- | --------------------------------------- |
 | `short int` / `short`    | 2                   | Entier court (–32 768 à 32 767).        |
 | `unsigned short int`     | 2                   | Entier court non signé (0 à 65 535).    |
-| `int`                    | 4                   | Entier standard signé.                  |
 | `unsigned int`           | 4                   | Entier non signé (0 à 4 294 967 295).   |
 | `long int` / `long`      | 4 ou 8              | Entier long (dépend de l’architecture). |
 | `unsigned long int`      | 4 ou 8              | Entier long non signé.                  |
