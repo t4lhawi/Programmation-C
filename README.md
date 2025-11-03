@@ -36,33 +36,63 @@
 
 ## **1. Types de Données**
 
-| **Type**            | **Taille (en octets)** | **Description**                                                                 |
-|----------------------|-----------------------|---------------------------------------------------------------------------------|
-| `int`               | 4                     | Entier standard, généralement signé (entre -2³¹ et 2³¹-1 sur 32 bits).         |
-| `long`              | 8 (64 bits) ou 4 (32 bits) | Entier long, adapté pour des valeurs plus grandes.                            |
-| `float`             | 4                     | Nombre réel en précision simple (32 bits, ~7 chiffres significatifs).          |
-| `double`            | 8                     | Nombre réel en double précision (64 bits, ~15 chiffres significatifs).         |
-| `long double`       | 8, 10 ou 16           | Nombre réel avec une précision étendue, dépend de l'implémentation.            |
-| `char`              | 1                     | Caractère ou entier de petite taille (valeurs entre -128 et 127 ou 0 à 255).    |
-| `bool`              | 1                     | Type booléen (`true` ou `false`), défini avec `<stdbool.h>`.                    |
+- **Types de base :**
 
+| **Type**      | **Taille (en octets)** | **Description**                                                                  |
+| ------------- | ---------------------- | -------------------------------------------------------------------------------- |
+| `char`        | 1                      | Caractère (valeur ASCII), ou petit entier (-128 à 127 ou 0 à 255).               |
+| `bool`        | 1                      | Type booléen (`true` ou `false`), défini dans `<stdbool.h>`.                     |
+| `int`         | 4                      | Entier standard signé (-2³¹ à 2³¹−1 sur 32 bits).                                |
+| `float`       | 4                      | Nombre réel en précision simple (≈ 7 chiffres significatifs).                    |
+| `double`      | 8                      | Nombre réel en double précision (≈ 15 chiffres significatifs).                   |
+| `long double` | 8, 10 ou 16            | Nombre réel en précision étendue (dépend de l’implémentation).                   |
+| `void`        | —                      | Indique l’absence de type ou de valeur (utilisé pour les fonctions sans retour). |
+
+
+- **Modificateurs de type :**
+
+Les **modificateurs** changent la taille ou le signe des types entiers et réels.
+
+| **Combinaison possible** | **Taille (octets)** | **Description**                         |
+| ------------------------ | ------------------- | --------------------------------------- |
+| `short int` / `short`    | 2                   | Entier court (–32 768 à 32 767).        |
+| `unsigned short int`     | 2                   | Entier court non signé (0 à 65 535).    |
+| `int`                    | 4                   | Entier standard signé.                  |
+| `unsigned int`           | 4                   | Entier non signé (0 à 4 294 967 295).   |
+| `long int` / `long`      | 4 ou 8              | Entier long (dépend de l’architecture). |
+| `unsigned long int`      | 4 ou 8              | Entier long non signé.                  |
+| `long long int`          | 8                   | Entier très long (au moins ±9×10¹⁸).    |
+| `unsigned long long int` | 8                   | Entier très long non signé.             |
+| `signed char`            | 1                   | Caractère signé (–128 à 127).           |
+| `unsigned char`          | 1                   | Caractère non signé (0 à 255).          |
+
+> 💡 **Remarque :**
+> Les tailles peuvent varier selon la machine et le compilateur (utiliser `sizeof(type)` pour vérifier).
 
 
 - **Classes de stockage :**
 
+Les **classes de stockage** définissent la durée de vie et la portée (visibilité) des variables.
+
 | **Spécificateur** | **Description**                                                                        |
 | ----------------- | -------------------------------------------------------------------------------------- |
-| `auto`            | Définition automatique (implicite pour les variables locales).                         |
-| `static`          | La variable locale conserve sa valeur entre plusieurs appels.                          |
-| `extern`          | La variable est déclarée dans un autre fichier (utilisée pour le lien entre fichiers). |
+| `auto`            | Valeur automatique (par défaut pour les variables locales).                            |
+| `static`          | Conserve la valeur de la variable entre plusieurs appels de fonction.                  |
+| `extern`          | Indique que la variable est définie dans un autre fichier.                             |
+| `register`        | Suggestion pour stocker la variable dans un registre (accès rapide, mais non garanti). |
+
 
 
 - **Qualificateurs :**
 
-| **Qualificateur** | **Description**                                                                      |
-| ----------------- | ------------------------------------------------------------------------------------ |
-| `const`           | Spécifie une variable non modifiable (lecture seule).                                |
-| `volatile`        | Empêche certaines optimisations du compilateur (utile pour les registres matériels). |
+Les **qualificateurs** modifient le comportement du compilateur vis-à-vis de la variable.
+
+| **Qualificateur** | **Description**                                                                              |
+| ----------------- | -------------------------------------------------------------------------------------------- |
+| `const`           | Variable non modifiable (lecture seule).                                                     |
+| `volatile`        | Empêche les optimisations sur la variable (utile pour registres matériels ou interruptions). |
+| `restrict`        | (C99) Indique que le pointeur est la seule référence à la donnée qu’il pointe.               |
+
 
 
 
