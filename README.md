@@ -36,7 +36,7 @@
 
 ## **1. Types de Données**
 
-- **Types de base :**
+- ### **Types de base :**
 
 | **Type**      | **Taille (en octets)** | **Description**                                                                  |
 | ------------- | ---------------------- | -------------------------------------------------------------------------------- |
@@ -49,7 +49,7 @@
 | `void`        | —                      | Indique l’absence de type ou de valeur (utilisé pour les fonctions sans retour). |
 
 
-- **Modificateurs de type :**
+- ### **Modificateurs de type :**
 
 Les **modificateurs** changent la taille ou le signe des types entiers et réels.
 
@@ -69,7 +69,7 @@ Les **modificateurs** changent la taille ou le signe des types entiers et réels
 > Les tailles peuvent varier selon la machine et le compilateur (utiliser `sizeof(type)` pour vérifier).
 
 
-- **Classes de stockage :**
+- ### **Classes de stockage :**
 
 Les **classes de stockage** définissent la durée de vie et la portée (visibilité) des variables.
 
@@ -82,7 +82,7 @@ Les **classes de stockage** définissent la durée de vie et la portée (visibil
 
 
 
-- **Qualificateurs :**
+- ### **Qualificateurs :**
 
 Les **qualificateurs** modifient le comportement du compilateur vis-à-vis de la variable.
 
@@ -113,7 +113,7 @@ const Type Nom_const = valeur;
 
 ## **3. Lecture et Écriture des données**
 
-- **Affichage formaté avec `printf`**
+- ### **Affichage formaté avec `printf`**
 
 ```c
 %[flags][largeur][.précision][modificateur]spécificateur
@@ -159,7 +159,7 @@ const Type Nom_const = valeur;
 | **%%**        | Affiche le caractère `%`         | `printf("%%");` → `%`                    |
 
 
-- **Lecture formatée avec `scanf`**
+- ### **Lecture formatée avec `scanf`**
 
 ```c
 %[*][largeur][modificateur]spécificateur
@@ -204,7 +204,7 @@ const Type Nom_const = valeur;
 
 ## **5. Opérateurs**
 
-- **Opérateurs Arithmétiques**
+- ### **Opérateurs Arithmétiques**
 
 | **Opérateur** | **Description**                     | **Exemple**         |
 |---------------|-------------------------------------|---------------------|
@@ -217,7 +217,7 @@ const Type Nom_const = valeur;
 | `--`          | Décrémentation (soustrait 1)        | `a--` ou `--a`      |
 
 
-- **Opérateurs de Comparaison (Relationnels)**
+- ### **Opérateurs de Comparaison (Relationnels)**
 
 | **Opérateur** | **Description**                     | **Exemple**         |
 |---------------|-------------------------------------|---------------------|
@@ -229,7 +229,7 @@ const Type Nom_const = valeur;
 | `<=`          | Inférieur ou égal à                 | `a <= b`            |
 
 
-- **Opérateurs Logiques**
+- ### **Opérateurs Logiques**
 
 | **Opérateur** | **Description**                     | **Exemple**         |
 |---------------|-------------------------------------|---------------------|
@@ -238,7 +238,7 @@ const Type Nom_const = valeur;
 | `!`           | NON logique (inverse)               | `!a`                |
 
 
-- **Opérateurs d'Affectation**
+- ### **Opérateurs d'Affectation**
 
 | **Opérateur** | **Description**                     | **Exemple**         |
 |---------------|-------------------------------------|---------------------|
@@ -254,7 +254,7 @@ const Type Nom_const = valeur;
 | `<<=`         | Décalage à gauche et affecte        | `a <<= b` (équivaut à `a = a << b`) |
 
 
-- **Opérateurs Bit à Bit**
+- ### **Opérateurs Bit à Bit**
 
 | **Opérateur** | **Description**                          | **Exemple** |
 | ------------- | ---------------------------------------- | ----------- |
@@ -268,20 +268,25 @@ const Type Nom_const = valeur;
 <hr>
 
 ## **6. Structures Conditionnelles**
+
+- ### Condition Simple 
 ```c
-// Condition simple
 if (condition) {
     instructions;
 }
+```
 
-// Alternative
+- ### Alternative
+```c
 if (condition) {
     instructions;
 } else {
     instructions;
 }
+```
 
-// Imbriquée
+- ### Imbriquée
+```c
 if (condition1) {
     instructions;
 } else if (condition2) {
@@ -289,8 +294,10 @@ if (condition1) {
 } else {
     instructions;
 }
+```
 
-// Choix multiple avec switch
+- ### Choix Multiple
+```c
 switch(expression) {
     case valeur1:
         instructions;
@@ -303,21 +310,26 @@ switch(expression) {
         break;
 }
 ```
+
 <hr>
 
 ## **7. Structures Répétitives**
+- ### Boucle for
 ```c
-// Boucle for
 for (initialisation; condition; incrément) {
     instructions;
 }
+```
 
-// Boucle while
+- ### Boucle while
+```c
 while (condition) {
     instructions;
 }
+```
 
-// Boucle do...while
+- ### Boucle do...while
+```c
 do {
     instructions;
 } while (condition);
@@ -338,7 +350,7 @@ goto;
 <hr>
 
 ## **9. Tableaux**
-- **Déclaration d'une Tableau :**
+- #### **Déclaration d'une Tableau :**
 ```c
 // Tableau à une dimension
 Type Nom_Tab[taille];
@@ -346,7 +358,7 @@ Type Nom_Tab[taille];
 // Tableau à deux dimensions
 Type Nom_Tab[nbr_lignes][nbr_colonnes];
 ```
-- **Taille d'un Tableau :**
+- #### **Taille d'un Tableau :**
 ```c
 // Tableau à une dimension
 int taille = sizeof(Nom_Tab) / sizeof(Nom_Tab[0]);
