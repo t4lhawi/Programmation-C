@@ -45,19 +45,35 @@
     - **[Fonctions d'Entrée/Sortie](#1-types-de-données)**
 
 - **[Fonctions](#11-fonctions)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
+    - **[Déclaration](#déclaration-1)**
 
 - **[Pointeurs](#12-pointeurs)**
+    - **[Déclaration](#déclaration-2)**
+    - **[Initialisation](#initialisation)**
+    - **[Accès à la valeur pointée](#pointeur-et-tableaux)**
+    - **[Pointeur et tableaux](#pointeur-et-tableaux)**
+    - **[Pointeur de pointeur](#pointeur-de-pointeur)**
+    - **[Pointeur et fonctions](#pointeur-et-fonctions)**
+    - **[Pointeurs constants](#pointeurs-constants)**
+
 
 - **[Allocation Dynamique de la Mémoire](#13-allocation-dynamique-de-la-mémoire)**
+    - **[`malloc()` Allocation de mémoire brute](#malloc-allocation-de-mémoire-brute)**
+    - **[`calloc()` Allocation avec initialisation à zéro](#calloc-allocation-avec-initialisation-à-zéro)**
+    - **[`realloc()` Modification de la taille d'une allocation](#realloc-modification-de-la-taille-dune-allocation)**
+    - **[`free()` Libération de la mémoire](#free-libération-de-la-mémoire)**
 
 - **[Structures](#14-structures)**
+    - **[Déclaration](#déclaration-3)**
+    - **[Accès aux champs](#accès-aux-champs)**
 
 - **[Unions](#15-unions)**
+    - **[Déclaration](#déclaration-4)**
+    - **[Tableau Comparatif](#tableau-comparatif-entre-les-unions-et-les-structures-en-c)**
 
 - **[Énumérations](#16-énumérations)**
+    - **[Déclaration Avec valeurs par défaut](#déclaration-avec-valeurs-par-défaut)**
+    - **[Déclaration Avec valeurs personnalisées](#déclaration-avec-valeurs-personnalisées)**
 
 - **[Types Synonymes](#17-types-synonymes)**
 
@@ -66,8 +82,21 @@
 - **[Taille d'une Structure](#19-taille-dune-structure)**
 
 - **[Gestion des Fichiers](#20-gestion-des-fichiers)**
+    - **[Ouverture d’un fichier](#ouverture-dun-fichier)**
+    - **[Modes d’ouverture](#modes-douverture)**
+    - **[Vérification d’ouverture](#vérification-douverture)**
+    - **[Fermeture d’un fichier](#fermeture-dun-fichier)**
+    - **[Écriture](#écriture)**
+    - **[Lecture](#lecture)**
+    - **[Autres fonctions utiles](#autres-fonctions-utiles)**
 
 - **[Programmation Modulaire](#21-programmation-modulaire)**
+    - **[Fichier d'En-Tête (`*.h`)](#fichier-den-tête-h)**
+    - **[Fichier Source (`*.c`)](#fichier-source-c)**
+    - **[Fichier Principal (`main.c`)](#fichier-principal-mainc)**
+    - **[Compilation avec plusieurs modules](#compilation-avec-plusieurs-modules)**
+    - **[Compilation Directe](#compilation-directe)**
+    - **[Directives Clés](#directives-clés)**
 
 - **[Bibliothèques](#22-bibliothèques)**
 
