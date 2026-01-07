@@ -23,7 +23,7 @@
 
 - **[Structures Conditionnelles](#6-structures-conditionnelles)**
     - **[Condition Simple](#condition-simple)**
-    - **[Alternative](#Alternative)**
+    - **[Alternative](#alternative)**
     - **[Imbriquée](#imbriquée)**
     - **[Choix Multiple](#choix-multiple)**
 
