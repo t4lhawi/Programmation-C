@@ -3,53 +3,46 @@
 - **[Types de Données](#1-types-de-données)**
     - **[Types de Base](#types-de-base)**
     - **[Modificateurs de Type](#modificateurs-de-type)**
-    - **[Classes de Stockage](#1-types-de-données)**
-    - **[Qualificateurs ](#1-types-de-données)**
+    - **[Classes de Stockage](#classes-de-stockage)**
+    - **[Qualificateurs ](#qualificateurs)**
 
 - **[Déclaration de Variables](#2-déclaration-de-variables)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
 
 - **[Lecture et Écriture des données](#3-lecture-et-écriture-des-données)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
+    - **[Affichage formaté avec `printf`](#affichage-formaté-avec-printf)**
+    - **[Lecture formatée avec `scanf`](#lecture-formatée-avec-scanf)**
 
 - **[Caractères d'Échappement](#4-caractères-déchappement)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
 
 - **[Opérateurs](#5-opérateurs)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
+    - **[Opérateurs Arithmétiques](#opérateurs-arithmétiques)**
+    - **[Opérateurs de Comparaison](#opérateurs-de-comparaison-relationnels)**
+    - **[Opérateurs Logiques](#opérateurs-logiques)**
+    - **[Opérateurs d'Affectation](#opérateurs-daffectation)**
+    - **[Opérateurs Bit à Bit](#opérateurs-bit-à-bit)**
 
 - **[Structures Conditionnelles](#6-structures-conditionnelles)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
+    - **[Condition Simple](#condition-simple)**
+    - **[Alternative](#Alternative)**
+    - **[Imbriquée](#imbriquée)**
+    - **[Choix Multiple](#choix-multiple)**
 
 - **[Structures Répétitives](#7-structures-répétitives)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
+    - **[Boucle `for`](#boucle-for)**
+    - **[Boucle `while`](#boucle-while)**
+    - **[Boucle `do`...`while`](#boucle-dowhile)**
 
 - **[Contrôle des Boucles](#8-contrôle-des-boucles)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
 
 - **[Tableaux](#9-tableaux)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
+    - **[Déclaration d'une Tableau](#déclaration)**
+    - **[Taille d'un Tableau](#taille-dun-tableau)**
 
 - **[Chaînes de Caractères](#10-chaînes-de-caractères)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
-    - **[Types de Données](#1-types-de-données)**
+    - **[Fonctions de Base](#1-types-de-données)**
+    - **[Fonctions de Conversion](#1-types-de-données)**
+    - **[Fonctions de Manipulation de Caractères](#1-types-de-données)**
+    - **[Fonctions d'Entrée/Sortie](#1-types-de-données)**
 
 - **[Fonctions](#11-fonctions)**
     - **[Types de Données](#1-types-de-données)**
@@ -118,8 +111,8 @@
     | `signed char`            | 1                   | Caractère signé (–128 à 127).           |
     | `unsigned char`          | 1                   | Caractère non signé (0 à 255).          |
 
-> 💡 **Remarque**
-> Les tailles peuvent varier selon la machine et le compilateur (utiliser `sizeof(type)` pour vérifier).
+    > 💡 **Remarque**
+    > Les tailles peuvent varier selon la machine et le compilateur (utiliser `sizeof(type)` pour vérifier).
 
 
 - ### **Classes de Stockage**
@@ -400,7 +393,7 @@ goto;
 ---
 
 ## **9. Tableaux**
-- ### **Déclaration d'une Tableau**
+- ### **Déclaration**
     ```c
     // Tableau à une dimension
     Type Nom_Tab[taille];
@@ -423,7 +416,7 @@ goto;
 
 ## **10. Chaînes de Caractères**
 
-- ### **Fonctions de base (`<string.h>`)**
+- ### **Fonctions de Base (`<string.h>`)**
 
     | **Fonction** | **Syntaxe**              | **Description**                          |
     |--------------|--------------------------|------------------------------------------|
@@ -437,7 +430,7 @@ goto;
 
 
 
-- ### **Fonctions de conversion (`<stdlib.h>`)**
+- ### **Fonctions de Conversion (`<stdlib.h>`)**
 
     | **Fonction** | **Syntaxe**              | **Description**                          |
     |--------------|--------------------------|------------------------------------------|
@@ -447,7 +440,7 @@ goto;
 
 
 
-- ### **Fonctions de manipulation de caractères (`<ctype.h>`)**
+- ### **Fonctions de Manipulation de Caractères (`<ctype.h>`)**
 
     | **Fonction** | **Syntaxe**              | **Description**                          |
     |--------------|--------------------------|------------------------------------------|
@@ -461,7 +454,7 @@ goto;
 
 
 
-- ### **Fonctions d'entrée/sortie (`<stdio.h>`)**
+- ### **Fonctions d'Entrée/Sortie (`<stdio.h>`)**
 
     | **Fonction** | **Syntaxe**              | **Description**                          |
     |--------------|--------------------------|------------------------------------------|
@@ -471,22 +464,23 @@ goto;
 ---
 
 ## **11. Fonctions**
-    ```c
-    Type_retour nom_fonction(Type param1, Type param2) {
-        // Code
-        return valeur;
-    }
-    ```
+- ### **Déclaration**
+```c
+Type_retour nom_fonction(Type param1, Type param2) {
+    // Code
+    return valeur;
+}
+```
 ---
 
 ## **12. Pointeurs**
 
-- ### **Déclaration d'un pointeur**
+- ### **Déclaration**
     ```c
     type *ptr;
     ```
 
-- ### **Initialisation d'un pointeur**
+- ### **Initialisation**
     ```c
     ptr = &variable;
     ```
