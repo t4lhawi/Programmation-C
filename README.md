@@ -1,8 +1,8 @@
 ## **Plan du Contenu**
 
 - **[Types de Données](#1-types-de-données)**
-    - **[Types de Base](#1-types-de-données)**
-    - **[Modificateurs de Type](#1-types-de-données)**
+    - **[Types de Base](#types-de-base)**
+    - **[Modificateurs de Type](#modificateurs-de-type)**
     - **[Classes de Stockage](#1-types-de-données)**
     - **[Qualificateurs ](#1-types-de-données)**
 
@@ -91,7 +91,7 @@
 
 ## **1. Types de Données**
 
-- ### **Types de base**
+- ### **Types de Base**
     | **Type**      | **Taille (en octets)** | **Description**                                                                  |
     | ------------- | ---------------------- | -------------------------------------------------------------------------------- |
     | `char`        | 1                      | Caractère (valeur ASCII), ou petit entier (-128 à 127 ou 0 à 255).               |
@@ -103,7 +103,7 @@
     | `void`        | —                      | Indique l’absence de type ou de valeur (utilisé pour les fonctions sans retour). |
 
 
-- ### **Modificateurs de type**
+- ### **Modificateurs de Type**
     Les **modificateurs** changent la taille ou le signe des types entiers et réels.
     
     | **Combinaison possible** | **Taille (octets)** | **Description**                         |
@@ -122,7 +122,7 @@
 > Les tailles peuvent varier selon la machine et le compilateur (utiliser `sizeof(type)` pour vérifier).
 
 
-- ### **Classes de stockage**
+- ### **Classes de Stockage**
     Les **classes de stockage** définissent la durée de vie et la portée (visibilité) des variables.
     
     | **Spécificateur** | **Description**                                                                        |
