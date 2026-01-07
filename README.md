@@ -102,11 +102,11 @@
 
 ---
 
-<h3 align="center"><a href="https://github.com/mohamedtalhaouii/Programmation-Cpp" target="_blank">Lien de Programmation en Language C++</a></h3>
+<h3 align="center"><a href="https://github.com/t4lhawi/Programmation-Cpp" target="_blank">Lien de Programmation en Language C++</a></h3>
 
 ---
 
-<h3 align="center"><a href="https://github.com/mohamedtalhaouii/Embedded-C" target="_blank">Programmation en C – Systèmes Embarqué</a></h3>
+<h3 align="center"><a href="https://github.com/t4lhawi/Embedded-C" target="_blank">Programmation en C – Systèmes Embarqué</a></h3>
 
 
 ---
