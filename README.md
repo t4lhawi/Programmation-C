@@ -1,53 +1,53 @@
-## **Plan du Contenu**
+# **Plan du Contenu :**
 
-- **[Types de Données](#1-types-de-données)**
+- ## **[Types de Données](#1-types-de-données)**
     - **[Types de Base](#types-de-base)**
     - **[Modificateurs de Type](#modificateurs-de-type)**
     - **[Classes de Stockage](#classes-de-stockage)**
     - **[Qualificateurs ](#qualificateurs)**
 
-- **[Déclaration de Variables](#2-déclaration-de-variables)**
+- ## **[Déclaration de Variables](#2-déclaration-de-variables)**
 
-- **[Lecture et Écriture des données](#3-lecture-et-écriture-des-données)**
+- ## **[Lecture et Écriture des données](#3-lecture-et-écriture-des-données)**
     - **[Affichage formaté avec `printf`](#affichage-formaté-avec-printf)**
     - **[Lecture formatée avec `scanf`](#lecture-formatée-avec-scanf)**
 
-- **[Caractères d'Échappement](#4-caractères-déchappement)**
+- ## **[Caractères d'Échappement](#4-caractères-déchappement)**
 
-- **[Opérateurs](#5-opérateurs)**
+- ## **[Opérateurs](#5-opérateurs)**
     - **[Opérateurs Arithmétiques](#opérateurs-arithmétiques)**
     - **[Opérateurs de Comparaison](#opérateurs-de-comparaison-relationnels)**
     - **[Opérateurs Logiques](#opérateurs-logiques)**
     - **[Opérateurs d'Affectation](#opérateurs-daffectation)**
     - **[Opérateurs Bit à Bit](#opérateurs-bit-à-bit)**
 
-- **[Structures Conditionnelles](#6-structures-conditionnelles)**
+- ## **[Structures Conditionnelles](#6-structures-conditionnelles)**
     - **[Condition Simple](#condition-simple)**
     - **[Alternative](#alternative)**
     - **[Imbriquée](#imbriquée)**
     - **[Choix Multiple](#choix-multiple)**
 
-- **[Structures Répétitives](#7-structures-répétitives)**
+- ## **[Structures Répétitives](#7-structures-répétitives)**
     - **[Boucle `for`](#boucle-for)**
     - **[Boucle `while`](#boucle-while)**
     - **[Boucle `do`...`while`](#boucle-dowhile)**
 
-- **[Contrôle des Boucles](#8-contrôle-des-boucles)**
+- ## **[Contrôle des Boucles](#8-contrôle-des-boucles)**
 
-- **[Tableaux](#9-tableaux)**
+- ## **[Tableaux](#9-tableaux)**
     - **[Déclaration d'une Tableau](#déclaration)**
     - **[Taille d'un Tableau](#taille-dun-tableau)**
 
-- **[Chaînes de Caractères](#10-chaînes-de-caractères)**
+- ## **[Chaînes de Caractères](#10-chaînes-de-caractères)**
     - **[Fonctions de Base](#1-types-de-données)**
     - **[Fonctions de Conversion](#1-types-de-données)**
     - **[Fonctions de Manipulation de Caractères](#1-types-de-données)**
     - **[Fonctions d'Entrée/Sortie](#1-types-de-données)**
 
-- **[Fonctions](#11-fonctions)**
+- ## **[Fonctions](#11-fonctions)**
     - **[Déclaration](#déclaration-1)**
 
-- **[Pointeurs](#12-pointeurs)**
+- ## **[Pointeurs](#12-pointeurs)**
     - **[Déclaration](#déclaration-2)**
     - **[Initialisation](#initialisation)**
     - **[Accès à la valeur pointée](#pointeur-et-tableaux)**
@@ -57,31 +57,31 @@
     - **[Pointeurs constants](#pointeurs-constants)**
 
 
-- **[Allocation Dynamique de la Mémoire](#13-allocation-dynamique-de-la-mémoire)**
+- ### **[Allocation Dynamique de la Mémoire](#13-allocation-dynamique-de-la-mémoire)**
     - **[`malloc()` Allocation de mémoire brute](#malloc-allocation-de-mémoire-brute)**
     - **[`calloc()` Allocation avec initialisation à zéro](#calloc-allocation-avec-initialisation-à-zéro)**
     - **[`realloc()` Modification de la taille d'une allocation](#realloc-modification-de-la-taille-dune-allocation)**
     - **[`free()` Libération de la mémoire](#free-libération-de-la-mémoire)**
 
-- **[Structures](#14-structures)**
+- ## **[Structures](#14-structures)**
     - **[Déclaration](#déclaration-3)**
     - **[Accès aux champs](#accès-aux-champs)**
 
-- **[Unions](#15-unions)**
+- ## **[Unions](#15-unions)**
     - **[Déclaration](#déclaration-4)**
     - **[Tableau Comparatif](#tableau-comparatif-entre-les-unions-et-les-structures-en-c)**
 
-- **[Énumérations](#16-énumérations)**
+- ## **[Énumérations](#16-énumérations)**
     - **[Déclaration Avec valeurs par défaut](#déclaration-avec-valeurs-par-défaut)**
     - **[Déclaration Avec valeurs personnalisées](#déclaration-avec-valeurs-personnalisées)**
 
-- **[Types Synonymes](#17-types-synonymes)**
+- ## **[Types Synonymes](#17-types-synonymes)**
 
-- **[Champs de Bits](#18-champs-de-bits)**
+- ## **[Champs de Bits](#18-champs-de-bits)**
 
-- **[Taille d'une Structure](#19-taille-dune-structure)**
+- ## **[Taille d'une Structure](#19-taille-dune-structure)**
 
-- **[Gestion des Fichiers](#20-gestion-des-fichiers)**
+- ## **[Gestion des Fichiers](#20-gestion-des-fichiers)**
     - **[Ouverture d’un fichier](#ouverture-dun-fichier)**
     - **[Modes d’ouverture](#modes-douverture)**
     - **[Vérification d’ouverture](#vérification-douverture)**
@@ -90,7 +90,7 @@
     - **[Lecture](#lecture)**
     - **[Autres fonctions utiles](#autres-fonctions-utiles)**
 
-- **[Programmation Modulaire](#21-programmation-modulaire)**
+- ## **[Programmation Modulaire](#21-programmation-modulaire)**
     - **[Fichier d'En-Tête (`*.h`)](#fichier-den-tête-h)**
     - **[Fichier Source (`*.c`)](#fichier-source-c)**
     - **[Fichier Principal (`main.c`)](#fichier-principal-mainc)**
@@ -98,7 +98,7 @@
     - **[Compilation Directe](#compilation-directe)**
     - **[Directives Clés](#directives-clés)**
 
-- **[Bibliothèques](#22-bibliothèques)**
+- ## **[Bibliothèques](#22-bibliothèques)**
 
 ---
 
