@@ -102,7 +102,7 @@
 
 ---
 
-<h3 align="center"><a href="https://github.com/t4lhawi/Programmation-Cpp" target="_blank">Lien de Programmation en Language C++</a></h3>
+<h3 align="center"><a href="https://github.com/t4lhawi/Programmation-Cpp" target="_blank">Programmation en C++</a></h3>
 
 ---
 
